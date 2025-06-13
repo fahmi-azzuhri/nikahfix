@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function Footer() {
   return (
@@ -11,14 +11,14 @@ export default function Footer() {
       </div>
       <div className="mt-8 flex flex-col items-center">
         <p className="text-[10px] text-[#A3A1A1] mb-6">
-          E-Invitation made with ♥ by{' '}
+          E-Invitation made with ♥ by{" "}
           <a
             className="underline"
             target="_blank"
             rel="noreferrer"
             href="https://www.facebook.com/arifintajul4"
           >
-            Tajul Arifin S
+            Fahmi Azzuhri Efki
           </a>
         </p>
       </div>
