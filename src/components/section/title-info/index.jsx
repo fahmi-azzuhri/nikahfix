@@ -1,5 +1,5 @@
-import React from 'react';
-import data from '../../../data/config.json';
+import React from "react";
+import data from "../../../data/config.json";
 
 export default function TitleInfo() {
   return (
@@ -11,8 +11,8 @@ export default function TitleInfo() {
         </span>
       </div>
       <h2 className="text-lg leading-5 text-white font-bold">
-        {data.pegantin.wanita.panggilan} &amp; {data.pegantin.pria.panggilan}:
-        Sebelum Hari H
+        {data.pegantin.pria.panggilan} &amp; {data.pegantin.wanita.panggilan}{" "}
+        {""}: Sebelum Hari H
       </h2>
       <div className="flex gap-1 items-center">
         <span className="text-green-500 mr-2">100% match</span>
@@ -20,7 +20,7 @@ export default function TitleInfo() {
           SU
         </span>
         <span className="text-white mr-2">
-          {data.tanggal_pernikahan.split('-')[0]}
+          {data.tanggal_pernikahan.split("-")[0]}
         </span>
         <span className="text-white mr-2">1h 26m</span>
         <span>
