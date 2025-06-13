@@ -67,6 +67,19 @@ VITE_APP_TABLE_NAME=your-table-name
 
 Gantilah `your-anon-key`, `your-project-url.supabase.co`, dan `your-table-name` sesuai dengan kredensial proyek Supabase Anda.
 
+-- Buat Table --
+CREATE TABLE public.nikahfix (
+id integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+created_at timestamptz NOT NULL DEFAULT now(),
+message text,
+name text,
+color text
+);
+
+-- Insert database --
+
+INSERT INTO "public"."nikahfix" ("id", "created_at", "message", "name", "color") VALUES ('1', '2025-06-13 04:55:02.727774+00', 'ngetes insert table', 'fahmi', 'red'), ('2', '2025-06-13 05:36:35.562438+00', 'selamat yaa', 'abcd', '#ffdb58');
+
 ### 3. Menginstal Supabase Client
 
 Pasang dependensi Supabase untuk React:
